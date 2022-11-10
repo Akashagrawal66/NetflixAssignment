@@ -16,5 +16,5 @@ public class VideoProfile extends BaseModel {
     @ManyToOne
     private Video video;
     private String status;
-    private LocalDateTime dateTime;
+    private LocalDateTime lastWatchTime;
 }

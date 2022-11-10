@@ -3,9 +3,7 @@ package com.example.demo.models;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.List;
 
 @Getter
@@ -13,6 +11,6 @@ import java.util.List;
 @Entity
 public class Actor extends BaseModel {
     private String name;
-    @OneToMany
+    @ManyToMany
     private List<Video> videos;
 }
